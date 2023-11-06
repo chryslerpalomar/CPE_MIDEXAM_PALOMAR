@@ -27,13 +27,13 @@
     changed_when: false
     when: ansible_distribution == "Ubuntu"
 
-#- hosts: ubuntu_servers
-#  become: true
-#  roles:
-#    - HTTPD_PHP_MariaDB--Ubuntu
-#    - Nagios--Ubuntu
-#    - InfluxDB_Grafana_Prometheus--Ubuntu
-#    - ElasticStack--Ubuntu
+- hosts: ubuntu_servers
+  become: true
+  roles:
+    - HTTPD_PHP_MariaDB--Ubuntu
+    - Nagios--Ubuntu
+    - InfluxDB_Grafana_Prometheus--Ubuntu
+    - ElasticStack--Ubuntu
 
 - hosts: centos_servers
   become: true
